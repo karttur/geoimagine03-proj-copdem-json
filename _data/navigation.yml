@@ -1,13 +1,34 @@
 # Site navigation links
 
-- title: About
-  url: /about/
-  include: 'N'
+-  title: About
+   url: /about/
+   include: N
 
-- title: Fount
-  url: /
-  include: 'N'
+-  title: Fount
+   url: /
+   include: N
 
-- title: Search
-  url: /search/
-  include: 'N'
+-  title: project blog (CopDEM)
+   url: https://karttur.github.io/geoimagine03-proj-copdem/index.html
+   include: N
+
+-  title: common
+   url: /common/
+   include: N
+
+-  title: copdem30gs
+   url: /copdem30gs/
+   include: N
+
+-  title: copdem90gs
+   url: /copdem90gs/
+   include: N
+
+-  title: copdem90aws
+   url: /copdem90aws/
+   include: N
+
+-  title: Search
+   url: /search/
+   include: N
+

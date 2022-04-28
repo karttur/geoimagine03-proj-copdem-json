@@ -1,21 +1,21 @@
 ---
 layout: article
-title: 0160_OrganizeAncillary_CopDEM-90m.json
-categories: projects
-excerpt: \# Import the CopDEM 90 m virtual data to the Framework
+title: 0160_OrganizeAncillary_gs-CopDEM-90m.json
+categories: copdem90gs
+excerpt:  Import the CopDEM 90 m virtual data to the Framework
 tags:: 
-    - 0160_OrganizeAncillary_CopDEM-90m.json
-date: 2021-12-19
-modified: 2021-12-19
+    - 0160_OrganizeAncillary_gs-CopDEM-90m
+date: 2022-04-28
+modified: 2022-04-28
 comments: true
 share: true
 ---
 
-# 0160 OrganizeAncillary CopDEM 90m.json (projects)
+# 0160 OrganizeAncillary gs CopDEM 90m (projects)
 
-### \# Import the CopDEM 90 m virtual data to the Framework
+##  Import the CopDEM 90 m virtual data to the Framework
 
-The json command file <span class='file'>0160_OrganizeAncillary_CopDEM-90m.json</span> is part of karttur's GeoImagine project <span class='project'>projects</span>. Calling the json file will execute the following commands of the GeoImagine Framework.
+The json command file <span class='file'>0160_OrganizeAncillary_gs-CopDEM-90m.json</span> is part of Karttur's GeoImagine project [<span class='project'>CopDEM</span>](https://karttur.github.io/geoimagine03-proj-copdem/index.html). For details on the commands see the blog on [Framework Processes](https://karttur.github.io/geoimagine03-docs-procpack/).
 
 ```
 {
@@ -49,18 +49,18 @@ The json command file <span class='file'>0160_OrganizeAncillary_CopDEM-90m.json<
         "label": "Copernicus DEM global 90 m"
       },
       "srcpath": {
-        "volume": "Ancillary",
+        "volume": "GeoImg2021",
         "hdr": "vrt"
       },
       "dstpath": {
-        "volume": "Ancillary",
+        "volume": "GeoImg2021",
         "hdr": "vrt"
       },
       "srcraw": [
         {
           "copdem90": {
-            "datadir": "/Volumes/Ancillary/ancillary/ESA/region/dem/global/0",
-            "datafile": "dem90_copernicusdem_global_0_v01-full",
+            "datadir": "ancillary/ESA/region/dem/global/0",
+            "datafile": "dem90_copdem_global_0_v01-full",
             "datalayer": "DEM",
             "title": "Copernicus DEM global 90 m",
             "label": "Copernicus DEM global 90 m"

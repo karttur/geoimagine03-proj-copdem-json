@@ -1,21 +1,21 @@
 ---
 layout: article
 title: 0001_CreatesScaling_DEM_v090.json
-categories: projects
-excerpt: \# Create scaling for fitting DEM data to byte range
+categories: common
+excerpt:  Create scaling for fitting DEM data to byte range
 tags:: 
     - 0001_CreatesScaling_DEM
-date: 2021-12-19
-modified: 2021-12-19
+date: 2022-04-28
+modified: 2022-04-28
 comments: true
 share: true
 ---
 
 # 0001 CreatesScaling DEM (projects)
 
-### \# Create scaling for fitting DEM data to byte range
+##  Create scaling for fitting DEM data to byte range
 
-The json command file <span class='file'>0001_CreatesScaling_DEM_v090.json</span> is part of karttur's GeoImagine project <span class='project'>projects</span>. Calling the json file will execute the following commands of the GeoImagine Framework.
+The json command file <span class='file'>0001_CreatesScaling_DEM_v090.json</span> is part of Karttur's GeoImagine project [<span class='project'>CopDEM</span>](https://karttur.github.io/geoimagine03-proj-copdem/index.html). For details on the commands see the blog on [Framework Processes](https://karttur.github.io/geoimagine03-docs-procpack/).
 
 ```
 {
@@ -109,7 +109,7 @@ The json command file <span class='file'>0001_CreatesScaling_DEM_v090.json</span
     },
     {
       "processid": "CreateScaling",
-      "overwrite": true,
+      "overwrite": false,
       "parameters": {
         "scalefac": 5,
         "mirror0": true
@@ -128,7 +128,7 @@ The json command file <span class='file'>0001_CreatesScaling_DEM_v090.json</span
     },
     {
       "processid": "CreateScaling",
-      "overwrite": true,
+      "overwrite": false,
       "parameters": {
         "scalefac": 5,
         "mirror0": false
@@ -501,7 +501,7 @@ The json command file <span class='file'>0001_CreatesScaling_DEM_v090.json</span
     },
     {
       "processid": "CreateScaling",
-      "overwrite": true,
+      "overwrite": false,
       "parameters": {
         "scalefac": 10,
         "mirror0": false
@@ -520,7 +520,7 @@ The json command file <span class='file'>0001_CreatesScaling_DEM_v090.json</span
     },
     {
       "processid": "CreateScaling",
-      "overwrite": true,
+      "overwrite": false,
       "parameters": {
         "scalefac": 10,
         "mirror0": false

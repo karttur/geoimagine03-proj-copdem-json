@@ -1,17 +1,31 @@
 ---
 layout: page
 title: "Project: CopDEM"
-excerpt: "Karttur's GeoImagine Framework: Copernicus Digital Elevation Model (DEM) processing"
-image: rainfall-delta_3B43_trmm_2001-2016_mk-z-ts-model
+excerpt: "Karttur's GeoImagine Framework: DEM processing with different versions of CopDEM"
 search_omit: true
 ---
 
-<h2>Json command files belonging to Karttur's GeoImagine Framework.
+<h4>Json command files for Karttur's GeoImagine Framework.</h4>
 
-Project: CopDEM</h2>
+The posts in this blog only contains the json command files. To get the context and more information on the project and the process chain, go to the <a href="https://karttur.github.io/geoimagine03-proj-copdem/index.html">project instruction blog</a>.
 
-<ul class="post-list">
-{% for post in site.categories.projects reversed %}
-  <li><article><a href="{{ site.url }}{{ post.url }}">{{ post.title }} <span class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time></span>{% if post.excerpt %} <span class="excerpt">{{ post.excerpt | remove: '\[ ... \]' | remove: '\( ... \)' | markdownify | strip_html | strip_newlines | escape_once }}</span>{% endif %}</a></article></li>
+<h5>Create layout and projection system for Copernicus DEM data<br/>(common command files):</h5>
+
+<ul class="post-list">{% for post in site.categories.common reversed %}<li><article><a href="{{ site.url }}{{ post.url }}">{{ post.title }} <span class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time></span>{% if post.excerpt %} <span class="excerpt">{{ post.excerpt | remove: '\[ ... \]' | remove: '\( ... \)' | markdownify | strip_html | strip_newlines | escape_once }}</span>{% endif %}</a></article></li>
+{% endfor %}
+</ul>
+<h5>Processes for 30 m CopDEM data from Gisco-Server<br/>(copdem30gs command files):</h5>
+
+<ul class="post-list">{% for post in site.categories.copdem30gs reversed %}<li><article><a href="{{ site.url }}{{ post.url }}">{{ post.title }} <span class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time></span>{% if post.excerpt %} <span class="excerpt">{{ post.excerpt | remove: '\[ ... \]' | remove: '\( ... \)' | markdownify | strip_html | strip_newlines | escape_once }}</span>{% endif %}</a></article></li>
+{% endfor %}
+</ul>
+<h5>Processes for 90 m CopDEM data from Gisco-Server<br/>(copdem90gs command files):</h5>
+
+<ul class="post-list">{% for post in site.categories.copdem90gs reversed %}<li><article><a href="{{ site.url }}{{ post.url }}">{{ post.title }} <span class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time></span>{% if post.excerpt %} <span class="excerpt">{{ post.excerpt | remove: '\[ ... \]' | remove: '\( ... \)' | markdownify | strip_html | strip_newlines | escape_once }}</span>{% endif %}</a></article></li>
+{% endfor %}
+</ul>
+<h5>Processes for 90 m CopDEM data from AWS<br/>(copdem90aws command files):</h5>
+
+<ul class="post-list">{% for post in site.categories.copdem90aws reversed %}<li><article><a href="{{ site.url }}{{ post.url }}">{{ post.title }} <span class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time></span>{% if post.excerpt %} <span class="excerpt">{{ post.excerpt | remove: '\[ ... \]' | remove: '\( ... \)' | markdownify | strip_html | strip_newlines | escape_once }}</span>{% endif %}</a></article></li>
 {% endfor %}
 </ul>

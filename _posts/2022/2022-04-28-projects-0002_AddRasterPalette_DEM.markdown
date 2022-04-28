@@ -1,21 +1,21 @@
 ---
 layout: article
 title: 0002_AddRasterPalette_DEM_v090.json
-categories: projects
-excerpt: \# Add raster paletter for byte range DEM data
+categories: common
+excerpt:  Add raster palette for byte range DEM data
 tags:: 
     - 0002_AddRasterPalette_DEM
-date: 2021-12-19
-modified: 2021-12-19
+date: 2022-04-28
+modified: 2022-04-28
 comments: true
 share: true
 ---
 
 # 0002 AddRasterPalette DEM (projects)
 
-### \# Add raster paletter for byte range DEM data
+##  Add raster palette for byte range DEM data
 
-The json command file <span class='file'>0002_AddRasterPalette_DEM_v090.json</span> is part of karttur's GeoImagine project <span class='project'>projects</span>. Calling the json file will execute the following commands of the GeoImagine Framework.
+The json command file <span class='file'>0002_AddRasterPalette_DEM_v090.json</span> is part of Karttur's GeoImagine project [<span class='project'>CopDEM</span>](https://karttur.github.io/geoimagine03-proj-copdem/index.html). For details on the commands see the blog on [Framework Processes](https://karttur.github.io/geoimagine03-docs-procpack/).
 
 ```
 {
@@ -33,7 +33,7 @@ The json command file <span class='file'>0002_AddRasterPalette_DEM_v090.json</sp
   "process": [
     {
       "processid": "AddRasterPalette",
-      "overwrite": true,
+      "overwrite": false,
       "parameters": {
         "palette": "dem_dark_auto",
         "compid": "dem_dark_auto",
@@ -83,7 +83,7 @@ The json command file <span class='file'>0002_AddRasterPalette_DEM_v090.json</sp
     },
     {
       "processid": "AddRasterPalette",
-      "overwrite": true,
+      "overwrite": false,
       "parameters": {
         "palette": "landformTPI",
         "compid": "dem_landform-TPI",
@@ -269,7 +269,7 @@ The json command file <span class='file'>0002_AddRasterPalette_DEM_v090.json</sp
     },
     {
       "processid": "AddRasterPalette",
-      "overwrite": true,
+      "overwrite": false,
       "parameters": {
         "palette": "landformTPIdouble",
         "compid": "landform-TPIx",
@@ -431,7 +431,7 @@ The json command file <span class='file'>0002_AddRasterPalette_DEM_v090.json</sp
     },
     {
       "processid": "AddRasterPalette",
-      "overwrite": true,
+      "overwrite": false,
       "parameters": {
         "palette": "slope",
         "compid": "dem_slope",
@@ -505,7 +505,7 @@ The json command file <span class='file'>0002_AddRasterPalette_DEM_v090.json</sp
     },
     {
       "processid": "AddRasterPalette",
-      "overwrite": true,
+      "overwrite": false,
       "parameters": {
         "palette": "slope2",
         "compid": "dem_slope2",
@@ -595,7 +595,7 @@ The json command file <span class='file'>0002_AddRasterPalette_DEM_v090.json</sp
     },
     {
       "processid": "AddRasterPalette",
-      "overwrite": true,
+      "overwrite": false,
       "parameters": {
         "palette": "slope3",
         "compid": "dem_slope3",
@@ -685,7 +685,7 @@ The json command file <span class='file'>0002_AddRasterPalette_DEM_v090.json</sp
     },
     {
       "processid": "AddRasterPalette",
-      "overwrite": true,
+      "overwrite": false,
       "parameters": {
         "palette": "peakproximity",
         "compid": "terrain_peakproximity",
@@ -751,7 +751,7 @@ The json command file <span class='file'>0002_AddRasterPalette_DEM_v090.json</sp
     },
     {
       "processid": "AddRasterPalette",
-      "overwrite": true,
+      "overwrite": false,
       "parameters": {
         "palette": "generalproximity",
         "compid": "any_proximity",
@@ -825,7 +825,7 @@ The json command file <span class='file'>0002_AddRasterPalette_DEM_v090.json</sp
     },
     {
       "processid": "AddRasterPalette",
-      "overwrite": true,
+      "overwrite": false,
       "parameters": {
         "palette": "near-divide-dist",
         "compid": "terrain_near-divide-dist",
@@ -907,7 +907,7 @@ The json command file <span class='file'>0002_AddRasterPalette_DEM_v090.json</sp
     },
     {
       "processid": "AddRasterPalette",
-      "overwrite": true,
+      "overwrite": false,
       "parameters": {
         "palette": "far-divide-dist",
         "compid": "terrain_far-divide-dist",
@@ -989,7 +989,7 @@ The json command file <span class='file'>0002_AddRasterPalette_DEM_v090.json</sp
     },
     {
       "processid": "AddRasterPalette",
-      "overwrite": true,
+      "overwrite": false,
       "parameters": {
         "palette": "generalproximity",
         "compid": "any_proximity",
@@ -1063,7 +1063,7 @@ The json command file <span class='file'>0002_AddRasterPalette_DEM_v090.json</sp
     },
     {
       "processid": "AddRasterPalette",
-      "overwrite": true,
+      "overwrite": false,
       "parameters": {
         "palette": "invgeneralproximity",
         "compid": "invany_proximity",
@@ -1145,7 +1145,7 @@ The json command file <span class='file'>0002_AddRasterPalette_DEM_v090.json</sp
     },
     {
       "processid": "AddRasterPalette",
-      "overwrite": true,
+      "overwrite": false,
       "parameters": {
         "palette": "streamproximity",
         "compid": "terrain_streamproximity",
@@ -1235,7 +1235,7 @@ The json command file <span class='file'>0002_AddRasterPalette_DEM_v090.json</sp
     },
     {
       "processid": "AddRasterPalette",
-      "overwrite": true,
+      "overwrite": false,
       "parameters": {
         "palette": "hydraulhead",
         "compid": "terrain_hydraulhead",
@@ -1333,7 +1333,7 @@ The json command file <span class='file'>0002_AddRasterPalette_DEM_v090.json</sp
     },
     {
       "processid": "AddRasterPalette",
-      "overwrite": true,
+      "overwrite": false,
       "parameters": {
         "palette": "divideheadold",
         "compid": "terrain_divideheadold",
@@ -1439,7 +1439,7 @@ The json command file <span class='file'>0002_AddRasterPalette_DEM_v090.json</sp
     },
     {
       "processid": "AddRasterPalette",
-      "overwrite": true,
+      "overwrite": false,
       "parameters": {
         "palette": "dividehead",
         "compid": "terrain_dividehead",
@@ -1529,7 +1529,7 @@ The json command file <span class='file'>0002_AddRasterPalette_DEM_v090.json</sp
     },
     {
       "processid": "AddRasterPalette",
-      "overwrite": true,
+      "overwrite": false,
       "parameters": {
         "palette": "tci",
         "compid": "terrain_tci",
@@ -1619,7 +1619,7 @@ The json command file <span class='file'>0002_AddRasterPalette_DEM_v090.json</sp
     },
     {
       "processid": "AddRasterPalette",
-      "overwrite": true,
+      "overwrite": false,
       "parameters": {
         "palette": "updrain",
         "compid": "terrain_updrain",
@@ -1709,7 +1709,7 @@ The json command file <span class='file'>0002_AddRasterPalette_DEM_v090.json</sp
     },
     {
       "processid": "AddRasterPalette",
-      "overwrite": true,
+      "overwrite": false,
       "parameters": {
         "palette": "spi",
         "compid": "terrain_spi",
@@ -1775,7 +1775,7 @@ The json command file <span class='file'>0002_AddRasterPalette_DEM_v090.json</sp
     },
     {
       "processid": "AddRasterPalette",
-      "overwrite": true,
+      "overwrite": false,
       "parameters": {
         "palette": "ruslelfactor",
         "compid": "terrain_ruslelfactor",
@@ -1865,7 +1865,7 @@ The json command file <span class='file'>0002_AddRasterPalette_DEM_v090.json</sp
     },
     {
       "processid": "AddRasterPalette",
-      "overwrite": true,
+      "overwrite": false,
       "parameters": {
         "palette": "slopelength",
         "compid": "terrain_slopelength",
@@ -1931,7 +1931,7 @@ The json command file <span class='file'>0002_AddRasterPalette_DEM_v090.json</sp
     },
     {
       "processid": "AddRasterPalette",
-      "overwrite": true,
+      "overwrite": false,
       "parameters": {
         "palette": "ruslesfactor",
         "compid": "terrain_ruslesfactor",
@@ -1997,7 +1997,7 @@ The json command file <span class='file'>0002_AddRasterPalette_DEM_v090.json</sp
     },
     {
       "processid": "AddRasterPalette",
-      "overwrite": true,
+      "overwrite": false,
       "parameters": {
         "palette": "slopesteepness",
         "compid": "terrain_slopesteepness",
@@ -2063,7 +2063,7 @@ The json command file <span class='file'>0002_AddRasterPalette_DEM_v090.json</sp
     },
     {
       "processid": "AddRasterPalette",
-      "overwrite": true,
+      "overwrite": false,
       "parameters": {
         "palette": "demcurvature",
         "compid": "dem_pcurve",
@@ -2129,7 +2129,7 @@ The json command file <span class='file'>0002_AddRasterPalette_DEM_v090.json</sp
     },
     {
       "processid": "AddRasterPalette",
-      "overwrite": true,
+      "overwrite": false,
       "parameters": {
         "palette": "tpi",
         "compid": "dem_tpi",
@@ -2195,7 +2195,7 @@ The json command file <span class='file'>0002_AddRasterPalette_DEM_v090.json</sp
     },
     {
       "processid": "AddRasterPalette",
-      "overwrite": true,
+      "overwrite": false,
       "parameters": {
         "palette": "tri",
         "compid": "dem_tri",
@@ -2277,7 +2277,7 @@ The json command file <span class='file'>0002_AddRasterPalette_DEM_v090.json</sp
     },
     {
       "processid": "AddRasterPalette",
-      "overwrite": true,
+      "overwrite": false,
       "parameters": {
         "palette": "tri2",
         "compid": "dem_tri2",
@@ -2359,7 +2359,7 @@ The json command file <span class='file'>0002_AddRasterPalette_DEM_v090.json</sp
     },
     {
       "processid": "AddRasterPalette",
-      "overwrite": true,
+      "overwrite": false,
       "parameters": {
         "palette": "shade",
         "compid": "dem_shade",
@@ -2401,7 +2401,7 @@ The json command file <span class='file'>0002_AddRasterPalette_DEM_v090.json</sp
     },
     {
       "processid": "AddRasterPalette",
-      "overwrite": true,
+      "overwrite": false,
       "parameters": {
         "palette": "globaldem",
         "compid": "dem_dem",
@@ -2451,7 +2451,7 @@ The json command file <span class='file'>0002_AddRasterPalette_DEM_v090.json</sp
     },
     {
       "processid": "AddRasterPalette",
-      "overwrite": true,
+      "overwrite": false,
       "parameters": {
         "palette": "shadedem",
         "compid": "shadedem_dem",
@@ -2501,7 +2501,7 @@ The json command file <span class='file'>0002_AddRasterPalette_DEM_v090.json</sp
     },
     {
       "processid": "AddRasterPalette",
-      "overwrite": true,
+      "overwrite": false,
       "parameters": {
         "palette": "fullrangedem",
         "compid": "fullrangedem_dem",
@@ -2559,7 +2559,7 @@ The json command file <span class='file'>0002_AddRasterPalette_DEM_v090.json</sp
     },
     {
       "processid": "AddRasterPalette",
-      "overwrite": true,
+      "overwrite": false,
       "parameters": {
         "palette": "dem_darkest_fixed",
         "compid": "dem_darkest_fixed",
@@ -2625,7 +2625,7 @@ The json command file <span class='file'>0002_AddRasterPalette_DEM_v090.json</sp
     },
     {
       "processid": "AddRasterPalette",
-      "overwrite": true,
+      "overwrite": false,
       "parameters": {
         "palette": "dem_dark_fixed",
         "compid": "dem_dark_fixed",
@@ -2675,7 +2675,7 @@ The json command file <span class='file'>0002_AddRasterPalette_DEM_v090.json</sp
     },
     {
       "processid": "AddRasterPalette",
-      "overwrite": true,
+      "overwrite": false,
       "parameters": {
         "palette": "dem_darkest_auto",
         "compid": "dem_darkest_auto",
@@ -2741,7 +2741,7 @@ The json command file <span class='file'>0002_AddRasterPalette_DEM_v090.json</sp
     },
     {
       "processid": "AddRasterPalette",
-      "overwrite": true,
+      "overwrite": false,
       "parameters": {
         "palette": "dem_light_fixed",
         "compid": "dem_light_fixed",
@@ -2807,7 +2807,7 @@ The json command file <span class='file'>0002_AddRasterPalette_DEM_v090.json</sp
     },
     {
       "processid": "AddRasterPalette",
-      "overwrite": true,
+      "overwrite": false,
       "parameters": {
         "palette": "dem_light_auto",
         "compid": "dem_light_auto",
@@ -2873,7 +2873,7 @@ The json command file <span class='file'>0002_AddRasterPalette_DEM_v090.json</sp
     },
     {
       "processid": "AddRasterPalette",
-      "overwrite": true,
+      "overwrite": false,
       "parameters": {
         "palette": "dem_lightest_fixed",
         "compid": "dem_lightest_fixed",
@@ -2923,7 +2923,7 @@ The json command file <span class='file'>0002_AddRasterPalette_DEM_v090.json</sp
     },
     {
       "processid": "AddRasterPalette",
-      "overwrite": true,
+      "overwrite": false,
       "parameters": {
         "palette": "dem_lightest_auto",
         "compid": "dem_lightest_auto",
@@ -2973,7 +2973,7 @@ The json command file <span class='file'>0002_AddRasterPalette_DEM_v090.json</sp
     },
     {
       "processid": "AddRasterPalette",
-      "overwrite": true,
+      "overwrite": false,
       "parameters": {
         "palette": "geomorphon",
         "compid": "dem_geomorphon",
@@ -3095,7 +3095,7 @@ The json command file <span class='file'>0002_AddRasterPalette_DEM_v090.json</sp
     },
     {
       "processid": "AddRasterPalette",
-      "overwrite": true,
+      "overwrite": false,
       "parameters": {
         "palette": "geomorphlegend",
         "compid": "dem_geomorphlegend",
@@ -3289,7 +3289,7 @@ The json command file <span class='file'>0002_AddRasterPalette_DEM_v090.json</sp
     },
     {
       "processid": "AddRasterPalette",
-      "overwrite": true,
+      "overwrite": false,
       "parameters": {
         "palette": "ps-morphology",
         "compid": "dem_ps-geomorphology",
@@ -3379,7 +3379,7 @@ The json command file <span class='file'>0002_AddRasterPalette_DEM_v090.json</sp
     },
     {
       "processid": "AddRasterPalette",
-      "overwrite": true,
+      "overwrite": false,
       "parameters": {
         "palette": "ps-morphology-legend",
         "compid": "dem_ps-geomorphology-legend",

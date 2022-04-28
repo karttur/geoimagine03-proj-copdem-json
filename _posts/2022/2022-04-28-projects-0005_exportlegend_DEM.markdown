@@ -1,21 +1,21 @@
 ---
 layout: article
 title: 0005_exportlegend_DEM_v090.json
-categories: projects
-excerpt: \# Export legend for DEM data
+categories: common
+excerpt:  Export legend for DEM data
 tags:: 
     - 0005_exportlegend_DEM
-date: 2021-12-19
-modified: 2021-12-19
+date: 2022-04-28
+modified: 2022-04-28
 comments: true
 share: true
 ---
 
 # 0005 exportlegend DEM (projects)
 
-### \# Export legend for DEM data
+##  Export legend for DEM data
 
-The json command file <span class='file'>0005_exportlegend_DEM_v090.json</span> is part of karttur's GeoImagine project <span class='project'>projects</span>. Calling the json file will execute the following commands of the GeoImagine Framework.
+The json command file <span class='file'>0005_exportlegend_DEM_v090.json</span> is part of Karttur's GeoImagine project [<span class='project'>CopDEM</span>](https://karttur.github.io/geoimagine03-proj-copdem/index.html). For details on the commands see the blog on [Framework Processes](https://karttur.github.io/geoimagine03-docs-procpack/).
 
 ```
 {
@@ -33,7 +33,7 @@ The json command file <span class='file'>0005_exportlegend_DEM_v090.json</span> 
   "process": [
     {
       "processid": "ExportLegend",
-      "overwrite": true,
+      "overwrite": false,
       "parameters": {
         "palette": "dem_darkest_fixed",
         "legendopacity": 128
@@ -56,7 +56,7 @@ The json command file <span class='file'>0005_exportlegend_DEM_v090.json</span> 
     },
     {
       "processid": "ExportLegend",
-      "overwrite": true,
+      "overwrite": false,
       "parameters": {
         "palette": "dem_dark_fixed",
         "legendopacity": 128
@@ -80,7 +80,7 @@ The json command file <span class='file'>0005_exportlegend_DEM_v090.json</span> 
 
     {
       "processid": "ExportLegend",
-      "overwrite": true,
+      "overwrite": false,
       "parameters": {
         "palette": "dem_light_fixed",
         "legendopacity": 128
@@ -104,7 +104,7 @@ The json command file <span class='file'>0005_exportlegend_DEM_v090.json</span> 
 
     {
       "processid": "ExportLegend",
-      "overwrite": true,
+      "overwrite": false,
       "parameters": {
         "palette": "dem_lightest_fixed",
         "legendopacity": 128
@@ -128,7 +128,7 @@ The json command file <span class='file'>0005_exportlegend_DEM_v090.json</span> 
 
     {
       "processid": "ExportLegend",
-      "overwrite": true,
+      "overwrite": false,
       "parameters": {
         "palette": "slope",
         "legendopacity": 128
@@ -152,7 +152,7 @@ The json command file <span class='file'>0005_exportlegend_DEM_v090.json</span> 
 
     {
       "processid": "ExportLegend",
-      "overwrite": true,
+      "overwrite": false,
       "parameters": {
         "palette": "slope2",
         "legendopacity": 128
@@ -176,7 +176,7 @@ The json command file <span class='file'>0005_exportlegend_DEM_v090.json</span> 
 
     {
       "processid": "ExportLegend",
-      "overwrite": true,
+      "overwrite": false,
       "parameters": {
         "palette": "slope3",
         "legendopacity": 128
@@ -200,7 +200,7 @@ The json command file <span class='file'>0005_exportlegend_DEM_v090.json</span> 
 
     {
       "processid": "ExportLegend",
-      "overwrite": true,
+      "overwrite": false,
       "parameters": {
         "palette": "demcurvature",
         "legendopacity": 128
@@ -233,7 +233,7 @@ The json command file <span class='file'>0005_exportlegend_DEM_v090.json</span> 
     },
     {
       "processid": "ExportLegend",
-      "overwrite": true,
+      "overwrite": false,
       "parameters": {
         "palette": "demcurvature",
         "legendopacity": 128
@@ -266,7 +266,7 @@ The json command file <span class='file'>0005_exportlegend_DEM_v090.json</span> 
     },
     {
       "processid": "ExportLegend",
-      "overwrite": true,
+      "overwrite": false,
       "parameters": {
         "palette": "demcurvature",
         "legendopacity": 128
@@ -299,7 +299,7 @@ The json command file <span class='file'>0005_exportlegend_DEM_v090.json</span> 
     },
     {
       "processid": "ExportLegend",
-      "overwrite": true,
+      "overwrite": false,
       "parameters": {
         "palette": "demcurvature",
         "legendopacity": 128
@@ -332,7 +332,7 @@ The json command file <span class='file'>0005_exportlegend_DEM_v090.json</span> 
     },
     {
       "processid": "ExportLegend",
-      "overwrite": true,
+      "overwrite": false,
       "parameters": {
         "palette": "tri",
         "legendopacity": 128
@@ -365,7 +365,7 @@ The json command file <span class='file'>0005_exportlegend_DEM_v090.json</span> 
     },
     {
       "processid": "ExportLegend",
-      "overwrite": true,
+      "overwrite": false,
       "parameters": {
         "palette": "tri2",
         "legendopacity": 128
@@ -398,7 +398,7 @@ The json command file <span class='file'>0005_exportlegend_DEM_v090.json</span> 
     },
     {
       "processid": "ExportLegend",
-      "overwrite": true,
+      "overwrite": false,
       "parameters": {
         "palette": "tpi",
         "legendopacity": 128
@@ -431,7 +431,7 @@ The json command file <span class='file'>0005_exportlegend_DEM_v090.json</span> 
     },
     {
       "processid": "ExportLegend",
-      "overwrite": true,
+      "overwrite": false,
       "parameters": {
         "palette": "tri",
         "legendopacity": 128
@@ -464,7 +464,7 @@ The json command file <span class='file'>0005_exportlegend_DEM_v090.json</span> 
     },
     {
       "processid": "ExportLegend",
-      "overwrite": true,
+      "overwrite": false,
       "parameters": {
         "palette": "landformTPIdouble",
         "legendopacity": 128
@@ -488,7 +488,7 @@ The json command file <span class='file'>0005_exportlegend_DEM_v090.json</span> 
 
     {
       "processid": "ExportLegend",
-      "overwrite": true,
+      "overwrite": false,
       "parameters": {
         "palette": "landformTPI",
         "legendnominal":false,
@@ -513,7 +513,7 @@ The json command file <span class='file'>0005_exportlegend_DEM_v090.json</span> 
 
     {
       "processid": "ExportLegend",
-      "overwrite": true,
+      "overwrite": false,
       "parameters": {
         "palette": "geomorphlegend",
         "legendnominal":false,
@@ -540,7 +540,7 @@ The json command file <span class='file'>0005_exportlegend_DEM_v090.json</span> 
 
     {
       "processid": "ExportLegend",
-      "overwrite": true,
+      "overwrite": false,
       "parameters": {
         "palette": "ps-morphology-legend",
         "legendnominal":false,
@@ -568,7 +568,7 @@ The json command file <span class='file'>0005_exportlegend_DEM_v090.json</span> 
 
     {
       "processid": "ExportLegend",
-      "overwrite": true,
+      "overwrite": false,
       "parameters": {
         "palette": "updrain",
         "legendopacity": 128
@@ -601,7 +601,7 @@ The json command file <span class='file'>0005_exportlegend_DEM_v090.json</span> 
     },
     {
       "processid": "ExportLegend",
-      "overwrite": true,
+      "overwrite": false,
       "parameters": {
         "palette": "invgeneralproximity",
         "legendopacity": 128
@@ -624,7 +624,7 @@ The json command file <span class='file'>0005_exportlegend_DEM_v090.json</span> 
     },
     {
       "processid": "ExportLegend",
-      "overwrite": true,
+      "overwrite": false,
       "parameters": {
         "palette": "streamproximity",
         "legendopacity": 128
@@ -647,7 +647,7 @@ The json command file <span class='file'>0005_exportlegend_DEM_v090.json</span> 
     },
     {
       "processid": "ExportLegend",
-      "overwrite": true,
+      "overwrite": false,
       "parameters": {
         "palette": "far-divide-dist",
         "legendopacity": 128
@@ -670,7 +670,7 @@ The json command file <span class='file'>0005_exportlegend_DEM_v090.json</span> 
     },
     {
       "processid": "ExportLegend",
-      "overwrite": true,
+      "overwrite": false,
       "parameters": {
         "palette": "dividehead",
         "legendopacity": 128
@@ -693,7 +693,7 @@ The json command file <span class='file'>0005_exportlegend_DEM_v090.json</span> 
     },
     {
       "processid": "ExportLegend",
-      "overwrite": true,
+      "overwrite": false,
       "parameters": {
         "palette": "dividehead",
         "legendopacity": 128
@@ -716,7 +716,7 @@ The json command file <span class='file'>0005_exportlegend_DEM_v090.json</span> 
     },
     {
       "processid": "ExportLegend",
-      "overwrite": true,
+      "overwrite": false,
       "parameters": {
         "palette": "hydraulhead",
         "legendopacity": 128
@@ -739,7 +739,7 @@ The json command file <span class='file'>0005_exportlegend_DEM_v090.json</span> 
     },
     {
       "processid": "ExportLegend",
-      "overwrite": true,
+      "overwrite": false,
       "parameters": {
         "palette": "near-divide-dist",
         "legendopacity": 128
@@ -762,7 +762,7 @@ The json command file <span class='file'>0005_exportlegend_DEM_v090.json</span> 
     },
     {
       "processid": "ExportLegend",
-      "overwrite": true,
+      "overwrite": false,
       "parameters": {
         "palette": "hydraulhead",
         "legendopacity": 128
@@ -785,7 +785,7 @@ The json command file <span class='file'>0005_exportlegend_DEM_v090.json</span> 
     },
     {
       "processid": "ExportLegend",
-      "overwrite": true,
+      "overwrite": false,
       "parameters": {
         "palette": "ruslelfactor",
         "legendopacity": 128
@@ -808,7 +808,7 @@ The json command file <span class='file'>0005_exportlegend_DEM_v090.json</span> 
     },
     {
       "processid": "ExportLegend",
-      "overwrite": true,
+      "overwrite": false,
       "parameters": {
         "palette": "ruslesfactor",
         "legendopacity": 128
@@ -831,7 +831,7 @@ The json command file <span class='file'>0005_exportlegend_DEM_v090.json</span> 
     },
     {
       "processid": "ExportLegend",
-      "overwrite": true,
+      "overwrite": false,
       "parameters": {
         "palette": "tci",
         "legendopacity": 128
@@ -854,7 +854,7 @@ The json command file <span class='file'>0005_exportlegend_DEM_v090.json</span> 
     },
     {
       "processid": "ExportLegend",
-      "overwrite": true,
+      "overwrite": false,
       "parameters": {
         "palette": "spi",
         "legendopacity": 128

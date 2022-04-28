@@ -1,21 +1,21 @@
 ---
 layout: article
-title: 0180_TileAncillaryRegion_CopDem-90m.json
-categories: projects
-excerpt: \# Tile the virtual CopDEM 90 m mosaic to tif tiles
+title: 0180_TileAncillaryRegion_aws-CopDem-90m.json
+categories: copdem90aws
+excerpt:  Tile the virtual mosaic to tif tiles
 tags:: 
-    - 0180_TileAncillaryRegion_CopDem-90m.json
-date: 2021-12-19
-modified: 2021-12-19
+    - 0180_TileAncillaryRegion_aws-CopDem-90m
+date: 2022-04-28
+modified: 2022-04-28
 comments: true
 share: true
 ---
 
-# 0180 TileAncillaryRegion CopDem 90m.json (projects)
+# 0180 TileAncillaryRegion aws CopDem 90m (projects)
 
-### \# Tile the virtual CopDEM 90 m mosaic to tif tiles
+##  Tile the virtual mosaic to tif tiles
 
-The json command file <span class='file'>0180_TileAncillaryRegion_CopDem-90m.json</span> is part of karttur's GeoImagine project <span class='project'>projects</span>. Calling the json file will execute the following commands of the GeoImagine Framework.
+The json command file <span class='file'>0180_TileAncillaryRegion_aws-CopDem-90m.json</span> is part of Karttur's GeoImagine project [<span class='project'>CopDEM</span>](https://karttur.github.io/geoimagine03-proj-copdem/index.html). For details on the commands see the blog on [Framework Processes](https://karttur.github.io/geoimagine03-docs-procpack/).
 
 ```
 {
@@ -36,18 +36,18 @@ The json command file <span class='file'>0180_TileAncillaryRegion_CopDem-90m.jso
       "version": "1.3",
       "overwrite": false,
       "parameters": {
-        "defregid": "global",
+        "src_defregid": "global",
         "tr_xres": 90,
         "tr_yres": 90,
         "resample": "bilinear",
         "asscript": true
       },
       "srcpath": {
-        "volume": "Ancillary",
+        "volume": "GeoImg2021",
         "hdr": "vrt"
       },
       "dstpath": {
-        "volume": "Ancillary",
+        "volume": "GeoImg2021",
         "hdr": "tif"
       },
       "srccomp": [
@@ -58,7 +58,7 @@ The json command file <span class='file'>0180_TileAncillaryRegion_CopDem-90m.jso
             "content": "dem",
             "layerid": "copdem",
             "prefix": "dem",
-            "suffix": "v01-90m",
+            "suffix": "v01-aws-90m",
             "cellnull": -32767
           }
         }

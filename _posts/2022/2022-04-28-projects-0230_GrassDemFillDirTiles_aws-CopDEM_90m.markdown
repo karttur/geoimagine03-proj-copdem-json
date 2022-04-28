@@ -1,21 +1,21 @@
 ---
 layout: article
-title: 0230_GrassDemFillDirTiles_CopDEM_90m.json
-categories: projects
-excerpt: \# Fill single pits and peaks (adjacent to streams)
+title: 0230_GrassDemFillDirTiles_aws-CopDEM_90m.json
+categories: copdem90aws
+excerpt:  Fill single pits and peaks (adjacent to streams)
 tags:: 
-    - 0230_GrassDemFillDirTiles_CopDEM_90m.json
-date: 2021-12-19
-modified: 2021-12-19
+    - 0230_GrassDemFillDirTiles_aws-CopDEM_90m
+date: 2022-04-28
+modified: 2022-04-28
 comments: true
 share: true
 ---
 
-# 0230 GrassDemFillDirTiles CopDEM 90m.json (projects)
+# 0230 GrassDemFillDirTiles aws CopDEM 90m (projects)
 
-### \# Fill single pits and peaks (adjacent to streams)
+##  Fill single pits and peaks (adjacent to streams)
 
-The json command file <span class='file'>0230_GrassDemFillDirTiles_CopDEM_90m.json</span> is part of karttur's GeoImagine project <span class='project'>projects</span>. Calling the json file will execute the following commands of the GeoImagine Framework.
+The json command file <span class='file'>0230_GrassDemFillDirTiles_aws-CopDEM_90m.json</span> is part of Karttur's GeoImagine project [<span class='project'>CopDEM</span>](https://karttur.github.io/geoimagine03-proj-copdem/index.html). For details on the commands see the blog on [Framework Processes](https://karttur.github.io/geoimagine03-docs-procpack/).
 
 ```
 {
@@ -45,11 +45,11 @@ The json command file <span class='file'>0230_GrassDemFillDirTiles_CopDEM_90m.js
         "mosaic": true
       },
       "srcpath": {
-        "volume": "Ancillary",
+        "volume": "GeoImg2021",
         "hdr": "tif"
       },
       "dstpath": {
-        "volume": "Ancillary",
+        "volume": "GeoImg2021",
         "hdr": "tif"
       },
       "srccomp": [
@@ -60,7 +60,7 @@ The json command file <span class='file'>0230_GrassDemFillDirTiles_CopDEM_90m.js
             "content": "dem",
             "layerid": "copdem",
             "prefix": "dem",
-            "suffix": "v01-90m"
+            "suffix": "v01-aws-90m"
           }
         }
       ],
@@ -72,7 +72,7 @@ The json command file <span class='file'>0230_GrassDemFillDirTiles_CopDEM_90m.js
             "content": "copy",
             "layerid": "copy",
             "prefix": "copy",
-            "suffix": "v01-pfpf-90m"
+            "suffix": "v01-aws-pfpf-90m"
           }
         }
       ]
@@ -90,11 +90,11 @@ The json command file <span class='file'>0230_GrassDemFillDirTiles_CopDEM_90m.js
         "query": "updrain >= 500 or area_cells = 1"
       },
       "srcpath": {
-        "volume": "Ancillary",
+        "volume": "GeoImg2021",
         "hdr": "tif"
       },
       "dstpath": {
-        "volume": "Ancillary",
+        "volume": "GeoImg2021",
         "hdr": "tif"
       },
       "srccomp": [
@@ -105,7 +105,7 @@ The json command file <span class='file'>0230_GrassDemFillDirTiles_CopDEM_90m.js
             "content": "dem",
             "layerid": "copdem",
             "prefix": "dem",
-            "suffix": "v01-pfpf-90m"
+            "suffix": "v01-aws-pfpf-90m"
           }
         }
       ],
@@ -117,7 +117,7 @@ The json command file <span class='file'>0230_GrassDemFillDirTiles_CopDEM_90m.js
             "content": "copy",
             "layerid": "copy",
             "prefix": "copy",
-            "suffix": "v01-pfpfhd-90m"
+            "suffix": "v01-aws-pfpfhd-90m"
           }
         }
       ]

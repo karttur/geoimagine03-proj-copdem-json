@@ -1,21 +1,21 @@
 ---
 layout: article
-title: 0240_GrassDemHydroDemTiles_CopDEM-90m.json
-categories: projects
-excerpt: \# Fill larger pits in streams of CopDEM 90 m with r.hydrodem
+title: 0240_GrassDemHydroDemTiles_gs-CopDEM-90m.json
+categories: copdem90gs
+excerpt:  Fill larger pits in streams of CopDEM 90 m with r.hydrodem
 tags:: 
-    - 0240_GrassDemHydroDemTiles_CopDEM-90m.json
-date: 2021-12-19
-modified: 2021-12-19
+    - 0240_GrassDemHydroDemTiles_gs-CopDEM-90m
+date: 2022-04-28
+modified: 2022-04-28
 comments: true
 share: true
 ---
 
-# 0240 GrassDemHydroDemTiles CopDEM 90m.json (projects)
+# 0240 GrassDemHydroDemTiles gs CopDEM 90m (projects)
 
-### \# Fill larger pits in streams of CopDEM 90 m with r.hydrodem
+##  Fill larger pits in streams of CopDEM 90 m with r.hydrodem
 
-The json command file <span class='file'>0240_GrassDemHydroDemTiles_CopDEM-90m.json</span> is part of karttur's GeoImagine project <span class='project'>projects</span>. Calling the json file will execute the following commands of the GeoImagine Framework.
+The json command file <span class='file'>0240_GrassDemHydroDemTiles_gs-CopDEM-90m.json</span> is part of Karttur's GeoImagine project [<span class='project'>CopDEM</span>](https://karttur.github.io/geoimagine03-proj-copdem/index.html). For details on the commands see the blog on [Framework Processes](https://karttur.github.io/geoimagine03-docs-procpack/).
 
 ```
 {

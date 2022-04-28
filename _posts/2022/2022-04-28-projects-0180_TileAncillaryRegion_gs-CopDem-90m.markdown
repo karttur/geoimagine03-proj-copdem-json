@@ -1,21 +1,21 @@
 ---
 layout: article
-title: 0191_MosaicAdjacentTiles_CopDEM-90m.json
-categories: projects
-excerpt: \# Create CopDEM 90 m virtual overlap mosaics for each filled/flattened tile
+title: 0180_TileAncillaryRegion_gs-CopDem-90m.json
+categories: copdem90gs
+excerpt:  Tile the virtual CopDEM 90 m mosaic to tif tiles
 tags:: 
-    - 0191_MosaicAdjacentTiles_CopDEM-90m.json
-date: 2021-12-19
-modified: 2021-12-19
+    - 0180_TileAncillaryRegion_gs-CopDem-90m
+date: 2022-04-28
+modified: 2022-04-28
 comments: true
 share: true
 ---
 
-# 0191 MosaicAdjacentTiles CopDEM 90m.json (projects)
+# 0180 TileAncillaryRegion gs CopDem 90m (projects)
 
-### \# Create CopDEM 90 m virtual overlap mosaics for each filled/flattened tile
+##  Tile the virtual CopDEM 90 m mosaic to tif tiles
 
-The json command file <span class='file'>0191_MosaicAdjacentTiles_CopDEM-90m.json</span> is part of karttur's GeoImagine project <span class='project'>projects</span>. Calling the json file will execute the following commands of the GeoImagine Framework.
+The json command file <span class='file'>0180_TileAncillaryRegion_gs-CopDem-90m.json</span> is part of Karttur's GeoImagine project [<span class='project'>CopDEM</span>](https://karttur.github.io/geoimagine03-proj-copdem/index.html). For details on the commands see the blog on [Framework Processes](https://karttur.github.io/geoimagine03-docs-procpack/).
 
 ```
 {
@@ -32,22 +32,23 @@ The json command file <span class='file'>0191_MosaicAdjacentTiles_CopDEM-90m.jso
   },
   "process": [
     {
-      "processid": "MosaicAdjacentTiles",
+      "processid": "TileAncillaryRegion",
       "version": "1.3",
       "overwrite": false,
       "parameters": {
+        "src_defregid": "global",
         "tr_xres": 90,
         "tr_yres": 90,
-        "resample": "near",
+        "resample": "bilinear",
         "asscript": true
       },
       "srcpath": {
-        "volume": "Arctic2021",
-        "hdr": "tif"
+        "volume": "GeoImg2021",
+        "hdr": "vrt"
       },
       "dstpath": {
-        "volume": "Arctic2021",
-        "hdr": "vrt"
+        "volume": "GeoImg2021",
+        "hdr": "tif"
       },
       "srccomp": [
         {
@@ -57,7 +58,7 @@ The json command file <span class='file'>0191_MosaicAdjacentTiles_CopDEM-90m.jso
             "content": "dem",
             "layerid": "copdem",
             "prefix": "dem",
-            "suffix": "v01-pfpf-90m",
+            "suffix": "v01-90m",
             "cellnull": -32767
           }
         }

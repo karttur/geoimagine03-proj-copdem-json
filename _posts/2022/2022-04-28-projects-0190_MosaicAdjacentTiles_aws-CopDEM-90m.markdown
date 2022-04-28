@@ -1,21 +1,21 @@
 ---
 layout: article
-title: 0192_MosaicAdjacentTiles_CopDEM-90m.json
-categories: projects
-excerpt: \# Create virtual overlaps of the twice filled CopDEM 90m
+title: 0190_MosaicAdjacentTiles_aws-CopDEM-90m.json
+categories: copdem90aws
+excerpt:  Create virtual overlap mosaics for each original tile
 tags:: 
-    - 0192_MosaicAdjacentTiles_CopDEM-90m.json
-date: 2021-12-19
-modified: 2021-12-19
+    - 0190_MosaicAdjacentTiles_aws-CopDEM-90m
+date: 2022-04-28
+modified: 2022-04-28
 comments: true
 share: true
 ---
 
-# 0192 MosaicAdjacentTiles CopDEM 90m.json (projects)
+# 0190 MosaicAdjacentTiles aws CopDEM 90m (projects)
 
-### \# Create virtual overlaps of the twice filled CopDEM 90m
+##  Create virtual overlap mosaics for each original tile
 
-The json command file <span class='file'>0192_MosaicAdjacentTiles_CopDEM-90m.json</span> is part of karttur's GeoImagine project <span class='project'>projects</span>. Calling the json file will execute the following commands of the GeoImagine Framework.
+The json command file <span class='file'>0190_MosaicAdjacentTiles_aws-CopDEM-90m.json</span> is part of Karttur's GeoImagine project [<span class='project'>CopDEM</span>](https://karttur.github.io/geoimagine03-proj-copdem/index.html). For details on the commands see the blog on [Framework Processes](https://karttur.github.io/geoimagine03-docs-procpack/).
 
 ```
 {
@@ -34,20 +34,19 @@ The json command file <span class='file'>0192_MosaicAdjacentTiles_CopDEM-90m.jso
     {
       "processid": "MosaicAdjacentTiles",
       "version": "1.3",
-      "overwrite": true,
+      "overwrite": false,
       "parameters": {
         "tr_xres": 90,
         "tr_yres": 90,
-        "overlap": 501,
         "resample": "near",
         "asscript": true
       },
       "srcpath": {
-        "volume": "Ancillary",
+        "volume": "GeoImg2021",
         "hdr": "tif"
       },
       "dstpath": {
-        "volume": "Ancillary",
+        "volume": "GeoImg2021",
         "hdr": "vrt"
       },
       "srccomp": [
@@ -58,7 +57,7 @@ The json command file <span class='file'>0192_MosaicAdjacentTiles_CopDEM-90m.jso
             "content": "dem",
             "layerid": "copdem",
             "prefix": "dem",
-            "suffix": "v01-pfpf-hydrdem4+4-90m",
+            "suffix": "v01-aws-90m",
             "cellnull": -32767
           }
         }
